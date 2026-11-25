@@ -16,6 +16,37 @@ n_validation_trials: 9
 n_check_trials: 3
 n_main_trials: 108
 
+# Fixed once for this study so regenerating the runtime files does not change
+# the validation set used across participants.
+validation_trials:
+  - stimulus: "assets/stimuli/surprise__white_female_child__02__surprise-wfm.jpg"
+    choice1: "assets/stimuli/anger__white_female_child__01__angry-wfm.jpg"
+    choice2: "assets/stimuli/uncertain__white_female_child__03__uncertain-wfm.jpg"
+  - stimulus: "assets/stimuli/neutral__white_female_adult__03__neutral-wfa.jpg"
+    choice1: "assets/stimuli/fear__white_male_adult__01__fear-wma.jpg"
+    choice2: "assets/stimuli/neutral__white_female_child__03__neutral-wfm.jpg"
+  - stimulus: "assets/stimuli/sadness__bipoc_male_adult__01__sad-bma.jpg"
+    choice1: "assets/stimuli/anger__white_female_child__01__angry-wfm.jpg"
+    choice2: "assets/stimuli/uncertain__bipoc_female_adult__03__uncertain-bfa.jpg"
+  - stimulus: "assets/stimuli/anger__bipoc_male_adult__02__anger-bma.png"
+    choice1: "assets/stimuli/happiness__bipoc_female_child__02__happy-bfm.jpg"
+    choice2: "assets/stimuli/uncertain__bipoc_male_adult__02__uncertain-bma.jpg"
+  - stimulus: "assets/stimuli/anger__white_female_child__01__angry-wfm.jpg"
+    choice1: "assets/stimuli/neutral__bipoc_male_child__02__neutral-bmm.jpg"
+    choice2: "assets/stimuli/neutral__white_male_adult__02__neutral-wma.jpg"
+  - stimulus: "assets/stimuli/happiness__white_male_adult__02__happy-wma.jpg"
+    choice1: "assets/stimuli/happiness__bipoc_male_adult__01__happy-bma.jpg"
+    choice2: "assets/stimuli/anger__bipoc_female_adult__01__anger-bfa.JPG"
+  - stimulus: "assets/stimuli/anger__bipoc_male_child__02__anger-bmm.png"
+    choice1: "assets/stimuli/surprise__white_female_adult__03__surprise-wfa.jpg"
+    choice2: "assets/stimuli/sadness__white_male_adult__03__sad-wma.JPG"
+  - stimulus: "assets/stimuli/happiness__bipoc_female_child__02__happy-bfm.jpg"
+    choice1: "assets/stimuli/neutral__bipoc_male_adult__01__neutral-bma.jpg"
+    choice2: "assets/stimuli/happiness__white_male_adult__02__happy-wma.jpg"
+  - stimulus: "assets/stimuli/uncertain__bipoc_male_adult__02__uncertain-bma.jpg"
+    choice1: "assets/stimuli/disgust__bipoc_male_adult__02__disgust-bma.jpg"
+    choice2: "assets/stimuli/sadness__bipoc_female_adult__02__sad-bfa.jpg"
+
 # 108 trials across five sessions: 22 + 22 + 22 + 21 + 21.
 n_sessions: 5
 session_trial_counts: [22, 22, 22, 21, 21]
