@@ -1,0 +1,135 @@
+/**
+ * Stimulus image paths and predefined validation trials.
+ * AUTO-GENERATED — do not edit directly.
+ * Edit experiment.yaml and run `npm run setup` to regenerate.
+ */
+
+/* eslint-disable no-unused-vars */
+var IMAGE_PATHS = [
+  "assets/stimuli/anger__bipoc_female_adult__01__anger-bfa.JPG",
+  "assets/stimuli/anger__bipoc_female_child__03__angry-bfm.jpg",
+  "assets/stimuli/anger__bipoc_male_adult__02__anger-bma.png",
+  "assets/stimuli/anger__bipoc_male_child__02__anger-bmm.png",
+  "assets/stimuli/anger__white_female_adult__02__anger-wfa.jpg",
+  "assets/stimuli/anger__white_female_child__01__angry-wfm.jpg",
+  "assets/stimuli/anger__white_male_adult__01__angry-wma.jpg",
+  "assets/stimuli/anger__white_male_child__03__angry-wmm.jpg",
+  "assets/stimuli/disgust__bipoc_female_adult__02__disgust-bfa.jpg",
+  "assets/stimuli/disgust__bipoc_female_child__01__disgust-bfm.jpg",
+  "assets/stimuli/disgust__bipoc_male_adult__02__disgust-bma.jpg",
+  "assets/stimuli/disgust__bipoc_male_child__03__disgust-bmm.jpg",
+  "assets/stimuli/disgust__white_female_adult__01__disgust-wfa.jpg",
+  "assets/stimuli/disgust__white_female_child__02__disgust-wfm.jpg",
+  "assets/stimuli/disgust__white_male_adult__02__disgust-wma.jpg",
+  "assets/stimuli/disgust__white_male_child__01__disgust-wmm.JPG",
+  "assets/stimuli/fear__bipoc_female_adult__03__fear-bfa.jpg",
+  "assets/stimuli/fear__bipoc_female_child__01__fear-bfm.jpg",
+  "assets/stimuli/fear__bipoc_male_adult__03__fear-bma.jpg",
+  "assets/stimuli/fear__bipoc_male_child__02__fear-bmm.jpg",
+  "assets/stimuli/fear__white_female_adult__03__fear-wfa.jpg",
+  "assets/stimuli/fear__white_female_child__02__fear-wfm.jpg",
+  "assets/stimuli/fear__white_male_adult__01__fear-wma.jpg",
+  "assets/stimuli/fear__white_male_child__03__fear-wmm.jpg",
+  "assets/stimuli/happiness__bipoc_female_adult__01__happy-bfa.jpg",
+  "assets/stimuli/happiness__bipoc_female_child__02__happy-bfm.jpg",
+  "assets/stimuli/happiness__bipoc_male_adult__01__happy-bma.jpg",
+  "assets/stimuli/happiness__bipoc_male_child__01__happy-bmm.JPG",
+  "assets/stimuli/happiness__white_female_adult__03__happy-wfa.jpg",
+  "assets/stimuli/happiness__white_female_child__01__happy-wfm.JPG",
+  "assets/stimuli/happiness__white_male_adult__02__happy-wma.jpg",
+  "assets/stimuli/happiness__white_male_child__03__happy-wmm.JPG",
+  "assets/stimuli/neutral__bipoc_female_adult__02__neutral-bwa.jpg",
+  "assets/stimuli/neutral__bipoc_female_child__03__neutral-bfm.jpeg",
+  "assets/stimuli/neutral__bipoc_male_adult__01__neutral-bma.jpg",
+  "assets/stimuli/neutral__bipoc_male_child__02__neutral-bmm.jpg",
+  "assets/stimuli/neutral__white_female_adult__03__neutral-wfa.jpg",
+  "assets/stimuli/neutral__white_female_child__03__neutral-wfm.jpg",
+  "assets/stimuli/neutral__white_male_adult__02__neutral-wma.jpg",
+  "assets/stimuli/neutral__white_male_child__02__neutral-wmm.jpg",
+  "assets/stimuli/sadness__bipoc_female_adult__02__sad-bfa.jpg",
+  "assets/stimuli/sadness__bipoc_female_child__01__sad-bfm.jpg",
+  "assets/stimuli/sadness__bipoc_male_adult__01__sad-bma.jpg",
+  "assets/stimuli/sadness__bipoc_male_child__02__sad-bmm.jpg",
+  "assets/stimuli/sadness__white_female_adult__02__sad-wfa.jpg",
+  "assets/stimuli/sadness__white_female_child__01__sad-wfm.jpg",
+  "assets/stimuli/sadness__white_male_adult__03__sad-wma.JPG",
+  "assets/stimuli/sadness__white_male_child__03__sad-wmm.jpg",
+  "assets/stimuli/surprise__bipoc_female_adult__01__surprise-bfa.jpg",
+  "assets/stimuli/surprise__bipoc_female_child__03__surprise-bfm.JPG",
+  "assets/stimuli/surprise__bipoc_male_adult__02__surprise-bma.jpg",
+  "assets/stimuli/surprise__bipoc_male_child__02__surprise-bmm.jpg",
+  "assets/stimuli/surprise__white_female_adult__03__surprise-wfa.jpg",
+  "assets/stimuli/surprise__white_female_child__02__surprise-wfm.jpg",
+  "assets/stimuli/surprise__white_male_adult__03__surprise-wma.jpg",
+  "assets/stimuli/surprise__white_male_child__02__surprise-wmm.jpg",
+  "assets/stimuli/uncertain__bipoc_female_adult__03__uncertain-bfa.jpg",
+  "assets/stimuli/uncertain__bipoc_female_child__03__uncertain-bfm.jpg",
+  "assets/stimuli/uncertain__bipoc_male_adult__02__uncertain-bma.jpg",
+  "assets/stimuli/uncertain__bipoc_male_child__01__uncertain-bmm.jpg",
+  "assets/stimuli/uncertain__white_female_adult__01__uncertain-wfa.JPG",
+  "assets/stimuli/uncertain__white_female_child__03__uncertain-wfm.jpg",
+  "assets/stimuli/uncertain__white_male_adult__03__uncertain-wma.jpg",
+  "assets/stimuli/uncertain__white_male_child__03__uncertain-wmm.jpg",
+];
+
+var VALIDATION_TRIALS = [
+  {
+    type: "validation",
+    stimulus: "assets/stimuli/surprise__white_female_child__02__surprise-wfm.jpg",
+    choice1:  "assets/stimuli/anger__white_female_child__01__angry-wfm.jpg",
+    choice2:  "assets/stimuli/uncertain__white_female_child__03__uncertain-wfm.jpg",
+  },
+  {
+    type: "validation",
+    stimulus: "assets/stimuli/neutral__white_female_adult__03__neutral-wfa.jpg",
+    choice1:  "assets/stimuli/fear__white_male_adult__01__fear-wma.jpg",
+    choice2:  "assets/stimuli/neutral__white_female_child__03__neutral-wfm.jpg",
+  },
+  {
+    type: "validation",
+    stimulus: "assets/stimuli/sadness__bipoc_male_adult__01__sad-bma.jpg",
+    choice1:  "assets/stimuli/anger__white_female_child__01__angry-wfm.jpg",
+    choice2:  "assets/stimuli/uncertain__bipoc_female_adult__03__uncertain-bfa.jpg",
+  },
+  {
+    type: "validation",
+    stimulus: "assets/stimuli/anger__bipoc_male_adult__02__anger-bma.png",
+    choice1:  "assets/stimuli/happiness__bipoc_female_child__02__happy-bfm.jpg",
+    choice2:  "assets/stimuli/uncertain__bipoc_male_adult__02__uncertain-bma.jpg",
+  },
+  {
+    type: "validation",
+    stimulus: "assets/stimuli/anger__white_female_child__01__angry-wfm.jpg",
+    choice1:  "assets/stimuli/neutral__bipoc_male_child__02__neutral-bmm.jpg",
+    choice2:  "assets/stimuli/neutral__white_male_adult__02__neutral-wma.jpg",
+  },
+  {
+    type: "validation",
+    stimulus: "assets/stimuli/happiness__white_male_adult__02__happy-wma.jpg",
+    choice1:  "assets/stimuli/happiness__bipoc_male_adult__01__happy-bma.jpg",
+    choice2:  "assets/stimuli/anger__bipoc_female_adult__01__anger-bfa.JPG",
+  },
+  {
+    type: "validation",
+    stimulus: "assets/stimuli/anger__bipoc_male_child__02__anger-bmm.png",
+    choice1:  "assets/stimuli/surprise__white_female_adult__03__surprise-wfa.jpg",
+    choice2:  "assets/stimuli/sadness__white_male_adult__03__sad-wma.JPG",
+  },
+  {
+    type: "validation",
+    stimulus: "assets/stimuli/happiness__bipoc_female_child__02__happy-bfm.jpg",
+    choice1:  "assets/stimuli/neutral__bipoc_male_adult__01__neutral-bma.jpg",
+    choice2:  "assets/stimuli/happiness__white_male_adult__02__happy-wma.jpg",
+  },
+  {
+    type: "validation",
+    stimulus: "assets/stimuli/uncertain__bipoc_male_adult__02__uncertain-bma.jpg",
+    choice1:  "assets/stimuli/disgust__bipoc_male_adult__02__disgust-bma.jpg",
+    choice2:  "assets/stimuli/sadness__bipoc_female_adult__02__sad-bfa.jpg",
+  },
+];
+
+// Export for testing (Node.js / vitest)
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = { IMAGE_PATHS: IMAGE_PATHS, VALIDATION_TRIALS: VALIDATION_TRIALS };
+}

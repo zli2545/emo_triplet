@@ -1,0 +1,100 @@
+/* Keep the template's jsPsych appearance; add response and session feedback. */
+.triplet-trial {
+  --triplet-image-size: clamp(190px, 24vw, 300px);
+  width: min(100%, 980px);
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: center;
+}
+.triplet-target,
+.triplet-choice-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.triplet-choice-row {
+  gap: clamp(28px, 5vw, 72px);
+  margin-top: clamp(30px, 5vh, 56px);
+}
+.triplet-image-frame {
+  display: block;
+  width: var(--triplet-image-size);
+  height: var(--triplet-image-size);
+  overflow: hidden;
+  border: 2px solid #ddd;
+  border-radius: 2px;
+  background: #eee;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .18);
+}
+.triplet-image-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.triplet-choice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  padding: 6px;
+  border-radius: 2px;
+  background: transparent;
+}
+.triplet-choice:hover, .triplet-choice:focus-visible {
+  outline: 3px solid #777;
+  outline-offset: 3px;
+}
+.triplet-choice.selected {
+  outline: 4px solid #397b59; outline-offset: 3px;
+}
+.triplet-key-hint {
+  min-height: 38px;
+  margin-top: 10px;
+}
+.triplet-key-hint kbd {
+  display: inline-grid;
+  min-width: 30px;
+  height: 30px;
+  place-items: center;
+  padding: 0 8px;
+  border: 1px solid #777;
+  border-radius: 3px;
+  background: #f5f5f5;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, .18);
+  color: #222;
+  font: 700 14px/1 Arial, Helvetica, sans-serif;
+}
+.fixation-cross {
+  position: relative; width: var(--fixation-size); height: var(--fixation-size);
+  margin: auto;
+}
+.fixation-cross::before, .fixation-cross::after {
+  content: ""; position: absolute; background: currentColor;
+  left: 50%; top: 50%; transform: translate(-50%, -50%);
+}
+.fixation-cross::before { width: 100%; height: var(--fixation-thickness); }
+.fixation-cross::after { height: 100%; width: var(--fixation-thickness); }
+#jspsych-progressbar-container.has-sessions { padding: 36px 0 38px; }
+#jspsych-progressbar-container.has-sessions > span { display: none; }
+.has-sessions #jspsych-progressbar-outer {
+  position: relative; width: min(700px, 80vw); overflow: visible; margin: 0 auto;
+}
+#session-progress { position: absolute; inset: 0; color: #444; font-size: 12px; }
+.session-boundary {
+  position: absolute; top: -3px; width: 14px; height: 14px;
+  box-sizing: border-box; padding: 0 !important; margin: 0;
+  border: 2px solid #888; border-radius: 50%; background: #eee;
+  transform: translateX(-50%);
+}
+.session-boundary.complete { background: #777; }
+.session-boundary > span {
+  position: absolute; left: 50%; bottom: 18px;
+  transform: translateX(-50%); white-space: nowrap; padding: 0 !important;
+}
+.session-segment { position: absolute; top: 18px; text-align: center; padding: 0 !important; }
+
+@media (max-width: 700px) {
+  .triplet-trial { --triplet-image-size: min(38vw, 220px); }
+  .triplet-choice-row { gap: 18px; margin-top: 28px; }
+}

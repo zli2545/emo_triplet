@@ -1,0 +1,101 @@
+# Configuration for the selected emotion-triplet study.
+# This directory contains the generated static experiment files.
+# If shared template code changes, regenerate this study from the
+# triplet_experiment_template repository and replace the generated files.
+
+stimuli_dir: assets/stimuli
+
+page_title: "Emotion Triplet Pilot"
+
+response_mode: keyboard
+response_keys: [k, l]
+
+# One tenth of the planned study: 96 random + 9 validation + 3 check.
+n_random_trials: 96
+n_validation_trials: 9
+n_check_trials: 3
+n_main_trials: 108
+
+# 108 trials across five sessions: 22 + 22 + 22 + 21 + 21.
+n_sessions: 5
+session_trial_counts: [22, 22, 22, 21, 21]
+break_html: >-
+  <p>Session {{SESSION_NUMBER}} of {{N_SESSIONS}} is complete.</p>
+  <p>Take a break. Continue when you are ready.</p>
+
+min_rt_ms: 900
+max_load_time_ms: 120000
+post_instruction_gap_ms: 2000
+post_demographic_gap_ms: 1000
+fixation_duration_ms: 500
+
+fixation_symbol: "+"
+fixation_size_px: 48
+fixation_thickness_px: 4
+selection_feedback_duration_ms: 120
+
+# Local runs download automatically; these values are not used for local Pipe saving.
+experiment_id: "LOCAL_EMO_TRIPLET_PILOT"
+filename_prefix: "emo_triplet_pilot"
+
+sona_base_url: ""
+sona_experiment_id: ""
+sona_credit_token: ""
+
+secret_code: "LOCALPILOT"
+worker_id_min_length: 7
+
+consent_image_path: "assets/consent/kc_lab_consent_prolific.png"
+consent_button_text: "Consent & Continue"
+
+preload_message: "Loading experiment files..."
+welcome_text: "Welcome to the emotion triplet pilot. Press any key to begin."
+
+instructions_html: >-
+  <p>In each trial, you will see three images: one target image on top and
+  two choice images beneath it.</p>
+  <p>Select the choice that is most similar to the target using any criteria.</p>
+  <p>Press <strong>k</strong> to select the left image and
+  <strong>l</strong> to select the right image.</p>
+  <p>There will be {{N_MAIN_TRIALS}} trials across {{N_SESSIONS}} sessions.</p>
+
+continue_button_text: "Continue"
+
+speed_feedback_html: >-
+  <p><strong>You're going too fast.</strong></p>
+  <p>Please slow down and assess each triplet.</p>
+  <p>Press 'y' to continue.</p>
+
+check_feedback_html: >-
+  <p><strong>Incorrect!</strong></p>
+  <p>That was an attention check. Please pay attention while completing this task.</p>
+  <p>Press 'y' to continue.</p>
+
+feedback_continue_key: "y"
+
+demographic_instructions_html: >-
+  <p>Almost finished.</p>
+  <p>Please provide the following demographic information.</p>
+
+goodbye_html: >-
+  You have finished the experiment.
+
+secret_code_html: "<strong>Completion code: {{SECRET_CODE}}</strong><br>"
+complete_button_text: "Complete Experiment"
+
+race_ethnicity_prompt: "Which categories describe you? Select all that apply to you:"
+race_ethnicity_options:
+  - "American Indian or Alaska Native"
+  - "Asian"
+  - "Black or African American"
+  - "Hispanic or Latino"
+  - "Middle Eastern or North African"
+  - "Native Hawaiian or Other Pacific Islander"
+  - "White"
+  - "Some other race, ethnicity, or origin"
+  - "I prefer not to answer"
+
+age_prompt: "Please enter your age (in years):"
+age_columns: 6
+gender_prompt: "How do you currently describe your gender identity? Please specify."
+gender_columns: 60

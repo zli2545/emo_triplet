@@ -1,0 +1,19 @@
+# Participant data and local outputs
+*.csv
+!stimulus_candidates.csv
+data/
+output/
+downloads/
+
+# Local development
+.DS_Store
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+.vscode/
+.idea/
+
+# Temporary files
+*.log
+*.tmp
