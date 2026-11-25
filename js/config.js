@@ -8,7 +8,7 @@
 var CONFIG = {
 
   // ── Page ────────────────────────────────────────────────
-  PAGE_TITLE: "Emotion Triplet Pilot",
+  PAGE_TITLE: "Emotion Triplet Study",
 
   // ── Response mode ───────────────────────────────────────
   RESPONSE_MODE: "keyboard",
@@ -18,15 +18,15 @@ var CONFIG = {
   ],
 
   // ── Trial counts ────────────────────────────────────────
-  N_RANDOM_TRIALS: 96,
-  N_CHECK_TRIALS: 3,
-  N_VALIDATION_TRIALS: 9,
-  N_MAIN_TRIALS: 108,
+  N_RANDOM_TRIALS: 960,
+  N_CHECK_TRIALS: 30,
+  N_VALIDATION_TRIALS: 90,
+  N_MAIN_TRIALS: 1080,
 
   // Sessions (category totals apply to the entire study)
   N_SESSIONS: 5,
-  SESSION_TRIAL_COUNTS: [22,22,22,21,21],
-  SESSION_PLAN: [{"session_number":1,"total":22,"random":20,"validation":1,"check":1},{"session_number":2,"total":22,"random":19,"validation":2,"check":1},{"session_number":3,"total":22,"random":19,"validation":2,"check":1},{"session_number":4,"total":21,"random":19,"validation":2,"check":0},{"session_number":5,"total":21,"random":19,"validation":2,"check":0}],
+  SESSION_TRIAL_COUNTS: [216,216,216,216,216],
+  SESSION_PLAN: [{"session_number":1,"total":216,"random":192,"validation":18,"check":6},{"session_number":2,"total":216,"random":192,"validation":18,"check":6},{"session_number":3,"total":216,"random":192,"validation":18,"check":6},{"session_number":4,"total":216,"random":192,"validation":18,"check":6},{"session_number":5,"total":216,"random":192,"validation":18,"check":6}],
   BREAK_HTML: "<p>Session {{SESSION_NUMBER}} of {{N_SESSIONS}} is complete.</p> <p>Take a break. Continue when you are ready.</p>",
 
   // ── Timing (milliseconds) ──────────────────────────────
@@ -44,7 +44,7 @@ var CONFIG = {
 
   // ── Data pipeline ──────────────────────────────────────
   EXPERIMENT_ID: "LOCAL_EMO_TRIPLET_PILOT",
-  FILENAME_PREFIX: "emo_triplet_pilot",
+  FILENAME_PREFIX: "emo_triplet",
 
   // ── SONA integration (UW-Madison) ─────────────────────
   SONA_BASE_URL: "",
