@@ -43,7 +43,7 @@ var CONFIG = {
   SELECTION_FEEDBACK_DURATION_MS: 120,
 
   // ── Data pipeline ──────────────────────────────────────
-  EXPERIMENT_ID: "LOCAL_EMO_TRIPLET_PILOT",
+  EXPERIMENT_ID: "o2zKFDPYoPxI",
   FILENAME_PREFIX: "emo_triplet",
 
   // ── SONA integration (UW-Madison) ─────────────────────

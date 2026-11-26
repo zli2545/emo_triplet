@@ -309,8 +309,8 @@ fixation_size_px: 48
 fixation_thickness_px: 4
 selection_feedback_duration_ms: 120
 
-# Local runs download automatically; these values are not used for local Pipe saving.
-experiment_id: "LOCAL_EMO_TRIPLET_PILOT"
+# Local runs download automatically; hosted runs submit to this DataPipe experiment.
+experiment_id: "o2zKFDPYoPxI"
 filename_prefix: "emo_triplet"
 
 sona_base_url: ""
