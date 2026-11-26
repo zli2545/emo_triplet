@@ -209,7 +209,9 @@ const timeline = [
   {type: jsPsychImageButtonResponse, stimulus: CONFIG.CONSENT_IMAGE_PATH,
     choices: [CONFIG.CONSENT_BUTTON_TEXT]},
   {type: jsPsychHtmlButtonResponse,
-    stimulus: CONFIG.INSTRUCTIONS_HTML.replace(/\{\{N_MAIN_TRIALS\}\}/g, CONFIG.N_MAIN_TRIALS),
+    stimulus: CONFIG.INSTRUCTIONS_HTML
+      .replace(/\{\{N_MAIN_TRIALS\}\}/g, CONFIG.N_MAIN_TRIALS)
+      .replace(/\{\{N_SESSIONS\}\}/g, sessionPlan.length),
     choices: [CONFIG.CONTINUE_BUTTON_TEXT], post_trial_gap: CONFIG.POST_INSTRUCTION_GAP_MS},
 ];
 
