@@ -38,6 +38,8 @@ TRIPLET_TEMPLATE_DIR=/path/to/triplet_experiment_template npm run setup
 
 The shared template repository must have its Node dependencies installed.
 `config.js` and `stimuli.js` are generated outputs; do not edit them directly.
+Session-specific encouragement text can be edited through `session_break_html`
+in `experiment.yaml`.
 
 ## GitHub Pages
 

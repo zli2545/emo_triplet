@@ -28,6 +28,13 @@ var CONFIG = {
   SESSION_TRIAL_COUNTS: [216,216,216,216,216],
   SESSION_PLAN: [{"session_number":1,"total":216,"random":192,"validation":18,"check":6},{"session_number":2,"total":216,"random":192,"validation":18,"check":6},{"session_number":3,"total":216,"random":192,"validation":18,"check":6},{"session_number":4,"total":216,"random":192,"validation":18,"check":6},{"session_number":5,"total":216,"random":192,"validation":18,"check":6}],
   BREAK_HTML: "<p>Session {{SESSION_NUMBER}} of {{N_SESSIONS}} is complete.</p> <p>Take a break. Continue when you are ready.</p>",
+  SESSION_BREAK_HTML: [
+    "<p><strong>Great work!</strong> You have successfully completed the first session.</p> <p>You're doing a good job. Take a short break, then continue when you are ready.</p>",
+    "<p><strong>Well done!</strong> You have successfully completed the second session.</p> <p>You're making good progress. Take a short break before continuing.</p>",
+    "<p><strong>You're doing a great job!</strong> You have completed more than half of the experiment.</p> <p>Take a well-earned break, then continue when you are ready.</p>",
+    "<p><strong>Almost there!</strong> You have successfully completed the fourth session.</p> <p>You're about to finish. One final session remains, so keep going!</p>",
+    "<p><strong>Excellent work!</strong> You have completed the final session.</p> <p>Thank you for taking part in the study.</p>",
+  ],
 
   // ── Timing (milliseconds) ──────────────────────────────
   MIN_RT_MS: 900,

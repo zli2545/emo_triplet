@@ -149,6 +149,13 @@ const speedFeedback = {type: jsPsychHtmlKeyboardResponse, stimulus: CONFIG.SPEED
 const checkFeedback = {type: jsPsychHtmlKeyboardResponse, stimulus: CONFIG.CHECK_FEEDBACK_HTML,
   choices: [CONFIG.FEEDBACK_CONTINUE_KEY]};
 
+function sessionBreakHtml(sessionNumber) {
+  const templates = CONFIG.SESSION_BREAK_HTML || [];
+  return (templates[sessionNumber - 1] || CONFIG.BREAK_HTML)
+    .replace(/\{\{SESSION_NUMBER\}\}/g, sessionNumber)
+    .replace(/\{\{N_SESSIONS\}\}/g, sessionPlan.length);
+}
+
 function fixationHtml() {
   if (CONFIG.FIXATION_SYMBOL === "+") {
     return '<div class="fixation-cross" aria-label="Fixation" style="--fixation-size:' +
@@ -262,8 +269,7 @@ sessionPlan.forEach((session, i) => {
   if (i < sessionPlan.length - 1) {
     timeline.push({
       type: jsPsychHtmlButtonResponse,
-      stimulus: () => CONFIG.BREAK_HTML.replace(/\{\{SESSION_NUMBER\}\}/g, session.session_number)
-        .replace(/\{\{N_SESSIONS\}\}/g, sessionPlan.length),
+      stimulus: () => sessionBreakHtml(session.session_number),
       choices: [CONFIG.CONTINUE_BUTTON_TEXT],
     });
   }
