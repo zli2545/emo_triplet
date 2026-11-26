@@ -33,7 +33,7 @@ var CONFIG = {
     "<p><strong>Well done!</strong> You have successfully completed the second session.</p> <p>You're making good progress. Take a short break before continuing.</p>",
     "<p><strong>You're doing a great job!</strong> You have completed more than half of the experiment.</p> <p>Take a well-earned break, then continue when you are ready.</p>",
     "<p><strong>Almost there!</strong> You have successfully completed the fourth session.</p> <p>You're about to finish. One final session remains, so keep going!</p>",
-    "<p><strong>Excellent work!</strong> You have completed the final session.</p> <p>Thank you for taking part in the study.</p>",
+    "<p><strong>Excellent work!</strong> You have completed all of the trials.</p> <p>You're almost finished. Just a few final questions remain — keep going!</p>",
   ],
 
   // ── Timing (milliseconds) ──────────────────────────────

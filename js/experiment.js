@@ -252,6 +252,11 @@ sessionPlan.forEach((session, i) => {
     },
   });
   if (i === sessionPlan.length - 1) {
+    timeline.push({
+      type: jsPsychHtmlButtonResponse,
+      stimulus: () => sessionBreakHtml(session.session_number),
+      choices: [CONFIG.CONTINUE_BUTTON_TEXT],
+    });
     timeline.push(
       {type: jsPsychHtmlButtonResponse, stimulus: CONFIG.DEMOGRAPHIC_INSTRUCTIONS_HTML,
         choices: [CONFIG.CONTINUE_BUTTON_TEXT], post_trial_gap: CONFIG.POST_DEMOGRAPHIC_GAP_MS},

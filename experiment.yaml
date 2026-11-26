@@ -311,8 +311,8 @@ session_break_html:
     <p><strong>Almost there!</strong> You have successfully completed the fourth session.</p>
     <p>You're about to finish. One final session remains, so keep going!</p>
   - >-
-    <p><strong>Excellent work!</strong> You have completed the final session.</p>
-    <p>Thank you for taking part in the study.</p>
+    <p><strong>Excellent work!</strong> You have completed all of the trials.</p>
+    <p>You're almost finished. Just a few final questions remain — keep going!</p>
 
 min_rt_ms: 900
 max_load_time_ms: 120000
